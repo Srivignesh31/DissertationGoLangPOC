@@ -19,7 +19,7 @@ var (
 
 func main() {
 	fileNameForDelete := DownloadFile()
-	// fmt.Println(fileNameForDelete)
+// 	fmt.Println(fileNameForDelete)
 
 	defer deleteFile(fileNameForDelete)
 
@@ -43,7 +43,7 @@ func deleteFile(fileNameForDelete string) {
 }
 
 func DownloadFile() (fileName string) {
-
+// 	place where the url can be changed for packging the binary
 	fullURLFile = "https://raw.githubusercontent.com/Srivignesh31/docker-compose/main/docker-compose.yaml"
 	//fullURLFile = "https://raw.githubusercontent.com/Srivignesh31/docker-compose/main/docker.yaml"
 	// Build fileName from fullPath
